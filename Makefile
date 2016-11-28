@@ -6,7 +6,7 @@ DEPS = emqttd emq_dashboard emq_recon emq_reloader emq_stomp emq_plugin_template
 	   emq_mod_rewrite emq_mod_presence emq_mod_retainer emq_mod_subscription \
 	   emq_auth_clientid emq_auth_username emq_auth_ldap emq_auth_http \
 	   emq_auth_mysql emq_auth_pgsql emq_auth_redis emq_auth_mongo \
-	   emq_sn emq_coap
+	   emq_sn emq_coap emq_etcd_register
 
 # emq deps
 dep_emqttd        = git https://github.com/emqtt/emqttd master
@@ -32,9 +32,13 @@ dep_emq_auth_redis      = git https://github.com/emqtt/emq_auth_redis master
 dep_emq_auth_mongo      = git https://github.com/emqtt/emq_auth_mongo master
 dep_emq_plugin_template = git https://github.com/emqtt/emq_plugin_template master
 
+# emq etcd register plugins
+dep_emq_etcd_register   = git https://github.com/liyue201/emq_etcd_register master
+
 # mqtt-sn and coap
 dep_emq_sn 	= git https://github.com/emqtt/emq_sn master
 dep_emq_coap = git https://github.com/emqtt/emq_coap master
+
 
 # COVER = true
 
